@@ -1,0 +1,21 @@
+title: slate_site
+
+chapters:
+  - api_from_json.md
+
+preprocessors:
+    - swaggerdoc:
+        spec_path: pet_swagger.json
+        mode: widdershins
+        environment:
+            language_tabs:
+                - shell
+                - java
+            user_templates: !path ./widdershins_templates
+    - includes
+
+backend_config:
+    slate:
+        slug: API
+        shards: 
+        - !path ./slate_shards/basic
