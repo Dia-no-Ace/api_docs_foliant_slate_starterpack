@@ -18,6 +18,8 @@ pages:
   - apk add docker-compose
   - docker-compose run --rm foliant make site --with slate
   - mv *.slate public
+  only:
+  - main
   artifacts:
     paths:
     - public
