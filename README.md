@@ -1,7 +1,9 @@
 # Стартерпак для сборки справочника API с Foliant
 
-Репозиторий для сборки сайта-справочника API через Foliant в Docker и его деплоя на Gitlab-pages.
+Репозиторий для демонстрации возможности сборки сайта-справочника API через Foliant в Docker и его деплоя на Gitlab-pages.
 Репозиторий содержит готовую конфигурацию для быстрой сборки справочника API с помощью бэкенда Slate. Также сюда добавлены шаблоны Widdershins (папка `widdershins_templates`) и файлы (`html`, `css`, `js`, шрифты) для Slate (папка `slate_shards`) — изменяя их вы можете кастомизировать генерируемый сайт.
+
+[Ссылка](https://foliant-slate-starterpack-denmaloyreb-3e71c2e3b035c652b35456b60.gitlab.io/#swagger-petstore) на сайт, собранного из этого репозитория. Он собирается из OpenAPI-спецификации Swagger Petstore.
 
 ## Локальная сборка сайта
 
@@ -13,8 +15,7 @@
 2. Находясь в папке склонированного (скопированного) репозитория, в терминале (консоли) выполните команду:
 
 ```bash
-# Site:
-$ docker-compose run --rm foliant make site --with slate
+docker-compose run --rm foliant make site --with slate
 ```
 
 Сгенерированный сайт будет находиться в папке `API.slate/`.
