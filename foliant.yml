@@ -5,7 +5,7 @@ chapters:
 
 preprocessors:
     - swaggerdoc:
-        spec_path: pet_swagger.json
+        spec_path: Techwriters.yaml
         mode: widdershins
         environment:
             language_tabs:
